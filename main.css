@@ -9,18 +9,23 @@ body {
 }
 
 header {
-    color: #1e272e;
+    color: #eef4f8;
     padding: 8px;
-    background-color: #e0bc42;
+    background-color: #c23616;
 }
 
 header h1 {
     font-size: 30px;
     text-align: center;
 }
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
 
 .logo-site {
-    width: 120px;
+    width: 150px;
+    mix-blend-mode: multiply;
 }
 
 .menu {
