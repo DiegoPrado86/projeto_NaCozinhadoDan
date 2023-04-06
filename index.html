@@ -5,95 +5,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Na Cozinha do Dan</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Na Cozinha do Dan</title>
 </head>
 
 <body>
-    <header class="p-3">
-        <div class="d-flex align-items-center justify-content-center">
-            <img class="logo-site me-3" src="./imagens/Imagem do WhatsApp de 2023-04-05 à(s) 12.08.56.jpg" alt="Logo do site">
-            <h1 class="m-0 fw-bold">Na Cozinha do Dan</h1>
+    <div class="container">
+        <header class="p-3">
+            <div class="logo d-flex flex-column align-items-center justify-content-center">
+                <img class="logo__image me-3" src="./imagens/logos/NCD_REDUZIDO_BRANCO.png" alt="Logo do site">
+                <h1 class="logo__title m-0 fw-bold">Na Cozinha do Dan</h1>
+            </div>
+        </header>
+        <div class="menu p-5">
+            <nav class="nv">
+                <ul class="m-0 d-flex justify-content-center p-0">
+                    <li>
+                        <a class="fw-bold nv__link" href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a class="fw-bold nv__link" href="#">DESTAQUES</a>
+                    </li>
+                    <li>
+                        <a class="fw-bold nv__link" href="#">PRODUTOS</a>
+                    </li>
+                    <li>
+                        <a class="fw-bold nv__link" href="#">CONTATO</a>
+                    </li>
+                    <li>
+                        <a class="fw-bold nv__link" href="#">SOBRE A LOJA</a>
+                    </li>
+                    <li>
+                        <div class="button__container">
+                            <a class="button__link" href="#">
+                                <div class="button__elements">
+                                    <span class="button__name fw-bold">Nossos produtos</span>
+                                    <i class="button__icon bi bi-play-fill"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <a class="text-dark ms-3" href="#">
+                        <li class="m-0 icon__insta">
+                            <i class="bi bi-instagram"></i>
+                        </li>
+                    </a>
+                    <a class="text-dark ms-3" href="#">
+                        <li class="m-0 icon__whatsapp">
+                            <i class="bi bi-whatsapp"></i>
+                        </li>
+                    </a>
+                    <a class="text-dark ms-3" href="#">
+                        <li class="m-0 icon__facebook">
+                            <i class="bi bi-facebook"></i>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
         </div>
-    </header>
-    <div class="menu p-3">
-        <nav>
-            <ul class="m-0 d-flex justify-content-center p-0">
-                <li>
-                    <a class="fw-bold nv-link" href="#">PRODUTOS</a>
-                </li>
-                <li>
-                    <a class="fw-bold nv-link" href="#">FAQ</a>
-                </li>
-                <li>
-                    <a class="fw-bold nv-link" href="#">FALE CONOSCO</a>
-                </li>
-                <li>
-                    <a class="fw-bold nv-link" href="#">CONTATO</a>
-                </li>
-                <li>
-                    <a class="fw-bold nv-link" href="#">PRODUTOS EXCLUSIVOS</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div id="carousel-movie" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div data-bs-interval="3000" class="carousel-item active carousel-item-1 h-100">
+        <div id="carousel-movie" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active carousel-item-1 h-100 rounded">
 
-            </div>
-            <div data-bs-interval="3000" class="carousel-item carousel-item-2 h-100">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item carousel-item-2 h-100 rounded">
 
+                </div>
+                <div data-bs-interval="3000" class="carousel-item carousel-item-3 h-100 rounded">
+
+                </div>
             </div>
-            <div data-bs-interval="3000" class="carousel-item carousel-item-3 h-100">
-                
+            <button data-bs-target="#carousel-movie" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-movie" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-movie" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-movie" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-movie" data-bs-slide-to="2"></button>
             </div>
-        </div>
-        <button data-bs-target="#carousel-movie" data-bs-slide="prev" class="carousel-control-prev" type="button">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button data-bs-target="#carousel-movie" data-bs-slide="next" class="carousel-control-next" type="button">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel-movie" class="active" data-bs-slide-to="0"></button>
-            <button type="button" data-bs-target="#carousel-movie" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carousel-movie" data-bs-slide-to="2"></button>
         </div>
     </div>
-    <section>
+    <section class="mb-4">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h2 class="m-5">Destaques</h2>
-                    <div class="container g-0">
-                        <div class="row">
-                            <div class="col-md-4 post">
-                                <a href="#">
-                                    <img src="https://via.placeholder.com/360x300" alt=""> 
-                                </a>
-                                <h4 class="h5 d-flex justify-content-center">Título da postagem</h4>
-                            </div>
-                            <div class="col-md-4 post">
-                                <a href="#">
-                                    <img src="https://via.placeholder.com/360x300" alt="">
-                                </a>
-                                <h4 class="h5 d-flex justify-content-center">Título da postagem</h4>
-                            </div>
-                            <div class="col-md-4 post">
-                                <a href="#">
-                                    <img src="https://via.placeholder.com/360x300" alt="">
-                                </a> 
-                                <h4 class="h5 d-flex justify-content-center">Título da postagem</h4>
-                            </div>
-                        </div>
+                <div class="col p-0">
+                    <h2 class="m-5 text-white title-section">Destaques</h2>
+                </div>
+            </div>
+            <div class="row candys">
+                <div class="col-md-4 candy">
+                    <div class="zoom rounded">
+                        <a href="#">
+                            <img class="w-100 candy__image rounded"
+                                src="imagens/doces/WhatsApp Image 2023-04-05 at 11.48.54.jpeg" alt="">
+                        </a>
                     </div>
+                    <h5 class="d-flex justify-content-center candy__title">Título da postagem</h5>
+                </div>
+                <div class="col-md-4 candy">
+                    <div class="zoom rounded">
+                        <a href="#">
+                            <img class="w-100 candy__image rounded"
+                                src="imagens/doces/WhatsApp Image 2023-04-05 at 11.54.15.jpeg" alt="">
+                        </a>
+                    </div>
+                    <h5 class="d-flex justify-content-center candy__title">Título da postagem</h5>
+                </div>
+                <div class="col-md-4 candy">
+                    <div class="zoom rounded">
+                        <a href="#">
+                            <img class="w-100 candy__image rounded"
+                                src="imagens/doces/WhatsApp Image 2023-04-05 at 11.54.16.jpeg" alt="">
+                        </a>
+                    </div>
+                    <h5 class="d-flex justify-content-center candy__title">Título da postagem</h5>
                 </div>
             </div>
         </div>
     </section>
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

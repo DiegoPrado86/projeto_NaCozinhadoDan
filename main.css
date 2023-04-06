@@ -6,34 +6,40 @@
 
 body {
     overflow-x: hidden;
+    background-color: #1c130d !important;
 }
 
 header {
     color: #eef4f8;
     padding: 8px;
-    background-color: #c23616;
 }
 
-header h1 {
+header .logo__title {
     font-size: 30px;
     text-align: center;
 }
+
 h2 {
     text-align: center;
     text-transform: uppercase;
 }
 
-.logo-site {
-    width: 150px;
-    mix-blend-mode: multiply;
+.title-section {
+    border-bottom: 1px solid #fff;
 }
 
-.menu {
-    background-color: black;
+.logo__image {
+    width: 180px;
 }
 
 nav ul {
     display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
 }
 
 .menu li {
@@ -42,14 +48,14 @@ nav ul {
     font-size: 16px;
 }
 
-.menu .nv-link {
+.menu .nv__link {
     position: relative;
     text-decoration: none;
     color: #fff;
 }
 
 /* sublinhar texto */
-.menu .nv-link:before {
+.menu .nv__link:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -64,15 +70,67 @@ nav ul {
     transition: all 0.3s ease-in-out 0s;
 }
 
-.menu .nv-link:hover:before {
+.menu .nv__link:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
+.button__container::before {
+    content: "";
+    height: 2.7rem;
+    width: .1rem;
+    background-color: #fff;
+    position: absolute;
+}
+
+.button__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.button__elements {
+    transition: all 0.3s ease;
+    background-color: #DF1010;
+    padding: 10px;
+    border-radius: 200px;
+    margin-left: 14px;
+}
+
+.button__elements:hover {
+    color: #000;
+    background-color: #FF9F1C;
+} 
+
+.icon__insta,
+.icon__whatsapp,
+.icon__facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 38px;
+    font-size: 5px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.icon__insta:hover,
+.icon__whatsapp:hover,
+.icon__facebook:hover {
+    color: #fff;
+    background-color: #818a91;
+}
+
+
 /* Parte do carousel */
 .carousel-inner {
-    height: 45em;
+    height: 35em;
 }
 
 .carousel-item {
@@ -80,13 +138,33 @@ nav ul {
 }
 
 .carousel-item-1 {
-    background-image: url('./imagens/mesa_doces.jpg');
+    background-image: url('./imagens/carousel/mesa_doces.jpg');
 }
 
 .carousel-item-2 {
-    background-image: url('./imagens/chocolates.jpg');
+    background-image: url('./imagens/carousel/chocolates.jpg');
 }
 
 .carousel-item-3 {
-    background-image: url('./imagens/doce_no_ar.jpg');
+    background-image: url('./imagens/carousel/doce_no_ar.jpg');
+}
+
+.zoom {
+    overflow: hidden;
+    height: 430px;
+    margin-bottom: 12px;
+}
+
+.candy__image {
+    margin-bottom: 12px;
+    transition: all 0.7s ease;
+}
+
+.zoom:hover .candy__image {
+    transform: scale(1.1);
+}
+
+.candy__title {
+    color: #fff;
+    margin-bottom: 12px;
 }
