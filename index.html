@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container p-0">
         <header class="p-3">
             <div class="logo d-flex flex-column align-items-center justify-content-center">
                 <img class="logo__image me-3" src="./imagens/logos/NCD_REDUZIDO_BRANCO.png" alt="Logo do site">
@@ -90,46 +90,54 @@
             </div>
         </div>
     </div>
-    <section>
-        <div class="container ">
-            <div class="row">
+    <section class="mt-5 mb-5">
+        <div class="container delivery p-5 rounded">
+            <div class="row d-flex justify-content-center">
                 <div class="col p-0">
-                    <h2 class="m-5 text-white title-section">Delivery para São Paulo</h2>
+                    <h2 class="mb-5 pb-3 text-white title-section">Delivery para São Paulo</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 p-0" >
-                        <a href="#">
-                            <img class="w-25 m-5 rounded-circle mx-auto d-block" id="delivery" src="./imagens/muuve-rider.gif" alt="">
-                        </a>
+                    <div class="col-md-4 p-0">
+                        <div>
+                            <img class="images__delivery rounded-circle mb-2 mx-auto d-block" id="delivery"
+                                src="./imagens/delivery/time.gif" alt="">
+                            <h5 class="h5 text-white text-center mb-5">Envio agendado</h5>
+                        </div>
                     </div>
                     <div class="col-md-4 p-0">
-                        <a href="#">
-                            <img class="w-25 m-5 rounded-circle mx-auto d-block"  src="./imagens/1_8DhdvtPA3dOWcyIVvlQA-A.gif " alt="" >
-                        </a>
+                        <img class="images__delivery rounded-circle mb-2 mx-auto d-block"
+                            src="./imagens/delivery/motorbike.gif" alt="">
+                        <h5 class="text-white text-center mb-5">Entrega rápida</h5>
                     </div>
                     <div class="col-md-4 p-0">
-                        <a href="#">
-                            <img class="w-25 m-5 rounded mx-auto d-block" src="./imagens/1_8DhdvtPA3dOWcyIVvlQA-A.gif " alt="">
-                        </a>
+                        <img class="images__delivery rounded-circle mb-2 mx-auto d-block"
+                            src="./imagens/delivery/bichinho-comendo-doce.gif" alt="">
+                        <h5 class="text-white text-center mb-5">Satisfação garantida!</h5>
                     </div>
                 </div>
             </div>
-        </div>
-        <div>
-            <h5 class="d-flex justify-content-center fst-italic candy__title">Pedidos feitos até 12h serão entregues até  18h do mesmo dia.</h5>
-            <h5 class="d-flex justify-content-center fst-italic candy__title">Após este horário o prazo de entrega é até 1 dia útil até às 18h, após confirmação de pagamento.</h5>
-            <h5 class="d-flex justify-content-center fst-italic candy__title">Os pedidos com entrega agendada devem ser feitos com 1 dia de antecedência.</h5>
+            <div class="delivery__titles text-center">
+                <div>
+                    <h5 class="delivery__title d-flex justify-content-center fst-italic rounded">Pedidos feitos até 12h serão entregues até 18h do mesmo dia.</h5>
+                </div>
+                <div>
+                    <h5 class="delivery__title d-flex justify-content-center fst-italic rounded">Após este horário o prazo de entrega é até 1 dia útil até às 18h, após confirmação de pagamento.</h5>
+                </div>
+                <div>
+                    <h5 class="delivery__title d-flex justify-content-center fst-italic rounded">Os pedidos com entrega agendada devem ser feitos com 1 dia antecedência</h5>
+                </div>
+            </div>
         </div>
     </section>
     <section class="mb-4">
         <div class="container">
             <div class="row">
                 <div class="col p-0">
-                    <h2 class="m-5 text-white title-section">Destaques</h2>
+                    <h2 class="mb-5 text-white title-section">Destaques</h2>
                 </div>
             </div>
             <div class="row candys">
-                <div class="col-md-4 candy">
+                <div class="col-md-4 candy p-0">
                     <div class="zoom rounded">
                         <a href="#">
                             <img class="w-100 candy__image rounded"
@@ -147,7 +155,7 @@
                     </div>
                     <h5 class="d-flex justify-content-center candy__title">Título da postagem</h5>
                 </div>
-                <div class="col-md-4 candy">
+                <div class="col-md-4 candy p-0">
                     <div class="zoom rounded">
                         <a href="#">
                             <img class="w-100 candy__image rounded"
@@ -160,6 +168,5 @@
         </div>
     </section>
     <script src="./lib/bootstrap.bundle.min.js"></script>
-    
 </body>
 </html>

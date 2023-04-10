@@ -91,7 +91,6 @@ nav ul {
     color: #fff;
 }
 
-
 .button__elements {
     transition: all 0.3s ease;
     background-color: #DF1010;
@@ -103,7 +102,7 @@ nav ul {
 .button__elements:hover {
     color: #000;
     background-color: #FF9F1C;
-} 
+}
 
 .icon__insta,
 .icon__whatsapp,
@@ -127,7 +126,6 @@ nav ul {
     background-color: #818a91;
 }
 
-
 /* Parte do carousel */
 .carousel-inner {
     height: 35em;
@@ -149,7 +147,6 @@ nav ul {
     background-image: url('./imagens/carousel/doce_no_ar.jpg');
 }
 
-
 .zoom {
     overflow: hidden;
     height: 430px;
@@ -168,4 +165,31 @@ nav ul {
 .candy__title {
     color: #fff;
     margin-bottom: 12px;
+}
+
+.delivery {
+    border: 12px solid #FF9F1C;
+}
+
+.images__delivery {
+    width: 40%;
+    border: 3px solid #000;
+}
+
+.delivery__titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery__title {
+    background-color: #6a5d4a;
+    color: #fff;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.delivery__title:hover {
+    transform: scale(1.1);
 }
